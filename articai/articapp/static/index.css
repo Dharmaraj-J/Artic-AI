@@ -1,0 +1,83 @@
+
+.homepage{
+    display: flex;
+    flex-direction: row;
+    font-family: Nunito sans ;
+}
+
+.main-1{
+    display: flex;
+    padding: 20px;
+    width: 18%;
+    height: 95vh;
+    justify-content: space-between;
+    flex-direction: column;    
+}
+#logo{
+    padding-bottom: 10px;
+}
+
+.left-1{
+    display:flex ;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    justify-content: center;
+}
+
+.main-2{
+    width: 52%;
+    padding: 20px;
+}
+.main-field{
+    padding: 0px 20px 0px 20px;
+}
+#URL{
+    width: 300px;
+    height: 50px;
+    background-color: #F7F6F9;
+    border-radius: 10px;
+    border: none;
+}
+
+#search{
+    margin-right:20px ;
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color:#CEEAFA;
+}
+
+h1{
+    font-size:2.5em;
+}
+.center-3{
+    background: #faf8f8;
+box-shadow: 77.5972px -77.5972px 155.194px rgba(0, 0, 0, 0.05);
+border-radius: 51.7315px;
+height: 100vh;
+}
+.main-button{
+        background-color: #F7F6F9;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+}
+
+.main-button:hover{ 
+    background-color:#CEEAFA;
+}
+
+.notes{
+    font-size :1.5em;   
+}
+.notes-inbox{
+
+    border: none;
+    background-color: #CEEAFA;
+} 
