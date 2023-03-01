@@ -1,0 +1,105 @@
+*{
+    font-family: Nunito sans;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.info{
+    margin: 30px;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container{
+    box-sizing:border-box;
+    position: absolute;
+    width:600px;
+    height:700px;
+    right:400px;
+    top: 60px;
+
+    background-color: #ceeafaca;
+    border: 2px solid black;
+    box-shadow:#eebb99;
+    border-radius: 40px;
+}
+
+h1{
+    font-family:Nunito sans;
+    font-size:normal;
+    font-weight: 400px;
+    font-size:40 px;
+    line-height: 20px;
+    color:#000080;
+    margin-top: -40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    padding-top: 40px 20px 40px;
+    font-style: normal;
+    font-weight:700;
+    line-height: 15px;
+    color:#000080 ;
+
+}
+
+button{
+    width: 150px;
+    border-radius:15px;
+    margin-left: 170px;
+    justify-content:center;
+    height: 40px;
+    color:  whitesmoke;
+    background-color:#000080;
+    box-shadow: #eebb99;
+    margin-bottom: 5px;
+    margin-top: 24px;
+    
+
+    font-size: medium;
+    font: weight 500px;
+    font-style:Nunito sans;
+    font-size:15px;
+    vertical-align: middle;
+    
+}
+
+input{
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+
+    border-radius: 20px;
+    border-color:hsl(206, 100%, 50%);
+    border-radius: 8px;
+    background-color:whitesmoke;
+
+}
+
+html, body {
+    margin:0;
+    height:100%;
+  }
+
+/*below class can be used for bg blur*/
+.bg-image{
+    background-image: url("https://4kwallpapers.com/images/wallpapers/firewatch-mountains-clear-sky-blue-sky-watchtower-2560x1080-6982.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   html, body {
+    height:100%;
+  } 
+
+  a,u {
+    text-decoration: none;
+  }
