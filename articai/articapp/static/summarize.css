@@ -1,0 +1,51 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0f0f0;
+    
+    
+      
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+
+  }
+  
