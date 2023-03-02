@@ -1,47 +1,26 @@
-<!-- <!DOCTYPE html>
+{% load static %}
+
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Text Summarizer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <h1>Text Summarizer</h1>
-  {% if page == 'login' %}
-  <form method="post">
-    {% csrf_token %}
-    <label for="text">Enter text to summarize:</label><br>
-    <textarea name="text" rows="10" cols="50"></textarea><br>
-    <input type="submit" value="Summarize">
-    {{summary}}
-  </form> 
-  {% else %}
-  <form method="post">
-    {% csrf_token %}
-    <input type="resert" value="Summarize">
-  </form>
-  {% endif %}
-</body>
-</html> -->
-
-
-
-{% if show_summary %}
-    <div class="summary">{{ summary }}</div>
-    <button onclick="showOriginal()">Reset</button>
-{% else %}
+  <head>
+    <title>Text Summarizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'summarize.css' %}">
+  </head>
+  <body>
+    <h1>Text Summarizer</h1>
     <form method="post">
-        {% csrf_token %}
-        <textarea name="text"></textarea>
-        <button type="submit">Summarize</button>
-    </form>
-{% endif %}
-<script>
-  function showOriginal() {
-      document.querySelector('.summary').style.display = 'none';
-      document.querySelector('textarea').value = '{{ text }}';
-  }
-  </script>
-  
+      {% csrf_token %}
+      <label for="text">Enter text to summarize:</label><br>
+      <textarea name="text" rows="10" cols="50"></textarea><br>
+      <input type="submit" value="Summarize">
+    </form> 
+    <div class="summary">
+      <h1>{{ title }}</h1>
+       {{summary}}
+    </div> 
+  </form>
+  </body>
+</html>
