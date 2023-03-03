@@ -39,8 +39,7 @@ def summarize(request):
 
 
 
-          
-    
+
 def registeruser(request):
 
     if request.method == 'POST':
@@ -62,7 +61,7 @@ def registeruser(request):
 
 @login_required(login_url='login')
 def index(request):
-     return render(request,'index.html')
+     return render(request,"index.html")
 
 
 
