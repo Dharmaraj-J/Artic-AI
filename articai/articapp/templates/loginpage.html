@@ -1,35 +1,36 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block head %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+        <link rel="stylesheet" href="{% static 'login.css'%}">
+</head>
+<body>
+	<div class="imgcontainer">
+		<img src="{% static 'Screenshot from 2023-02-27 16-47-31.png' %}" alt="Avatar" class="avatar">
+	</div>
 
-        <title>ArticleAI\Login</title>
-        <link rel="stylesheet" href="{% static 'login.css' %}">  
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
-{% endblock %}
-{% block content %}
-        <img src="https://4kwallpapers.com/images/wallpapers/firewatch-mountains-clear-sky-blue-sky-watchtower-2560x1080-6982.jpg" alt="Article AI" width= "100%" height="100%">
-        <div class="info-container">
-        
-                <form method="post">
-                    {% csrf_token %}
-                    <div class="info">
-                    <h1>Hello there!</h1>
-                    <label for="name">Name</label><br>
-                    <input type="text" placeholder="Enter username" name="username" required><br>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" placeholder="Enter email" name="email" required><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" placeholder="Enter password" name="password" required><br>
-                    <div class="remember-me">
-                       <input type="checkbox" value="lsRememberMe" id="rememberMe"> 
-                       <label for="rememberMe">Remember me</label>
-                    </div>
-                    <button class="login" type="login">Login</button>
+	<form method="POST">
+		{% csrf_token %}
+		<div class="container">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
 
-                    </div>
-                </form>
-                
-        </div>        
-{% endblock %}
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+			<div style="text-align: center; margin-top: 10px;">
+				<p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

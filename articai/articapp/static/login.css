@@ -1,85 +1,61 @@
-*{
-    font-family: Nunito sans;
+
+
+
+body {
+    background-image: url("{{ STATIC_URL }}login image.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
-
-.info{
-    margin: 25px;
-    padding: 40px 20px 40px 20px;
-    display: flex;
-    flex-direction: column;
+.container {
+    margin: auto;
+    max-width: 400px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
 }
-
-.info-container{
-    box-sizing:border-box;
-    position:absolute;
-    width:400px;
-    height:550px;
-    right: 100px;
-    top: 60px;
-
-    background-color: #CEEAFA;
-    border: 2px solid black;
-    box-shadow:#eebb99;
-    border-radius: 40px;
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
-h1{
-    font-family:Nunito sans;
-    font-size:normal;
-    font-weight: 400px;
-    font-size:40 px;
-    line-height: 20px;
-    color:#000080;
-    margin-top:  -20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }
-
-label{
-    padding-top: 40px 20px 40px;
-    font-style: normal;
-    font-weight:700;
-    line-height: 15px;
-    color:#000080 ;
-
+button:hover {
+    background-color: #45a049;
 }
-
-button{
-    display:flex;
-    margin: 10px;
-    width: 90px;
-    border-radius: 10px;
-    margin-left: 190px;
-    justify-content:center;
-    height: 30px;
-    color:  whitesmoke;
-    background-color:#000080;
-    box-shadow: #eebb99;
-    margin-top:-20px;
-
-    font-size: medium;
-    font: weight 500px;
-    font-style:Nunito sans;
-    font-size:15px;
-    
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
 }
-
-input{
-    margin: 0px 10px 0px 5px;
-    padding-top: 10px;
-    height: 50px;
-
-    border-radius: 20px;
-    border-color:#000080;
-    border-radius: 8px;
-    background-color:whitesmoke;
-
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
 }
-
-
-
-
- 
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}

@@ -3,21 +3,21 @@
 {% load static %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-    <title>Article AI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="{% static 'index.css' %}">
+<title>Article AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 {% endblock %}
 
 {% block content %}
-    <div class="homepage">
-        <div class="main-1">
-            <div class="left-1">
-            <img src="{% static 'Screenshot from 2023-02-27 16-47-31.png' %}"  width="140px" alt="" id="logo">
+<div class="homepage">
+    <div class="main-1">
+        <div class="left-1">
+            <img src="{% static 'Screenshot from 2023-02-27 16-47-31.png' %}" width="140px" alt="" id="logo">
             <section>
-                <img src="https://img.icons8.com/material-two-tone/24/null/meeting-time.png"/>
+                <img src="https://img.icons8.com/material-two-tone/24/null/meeting-time.png" />
                 <p>Upcoming meetings</p>
             </section>
             <section>
@@ -36,52 +36,52 @@
                 <img src="" alt="">
                 <p>Saved notes</p>
             </section>
-            
+
         </div>
         <div class="left-2">
             <p>Username 01</p>
             <img src="" alt="">
         </div>
-    
+
+    </div>
+    <div class="main-2">
+        <div class="center-1">
+            <input type="url" id="URL" name="homepage" placeholder="Enter your URL">
+            <input type="text" id="search" name="search" placeholder=" search">
         </div>
-        <div class="main-2">
-            <div class="center-1">
-                <input type="url" id="URL" name="homepage" placeholder="Enter your URL"> 
-                <input type="text" id="search" name="search" placeholder=" search">
-            </div>
-                <div class="center-2">
-                        <h1>Office Meeting 101</h1>
-                </div>
-                <br>
-                <div class="center-3">
-                    <div class="main-options">
+        <div class="center-2">
+            <h1>Office Meeting 101</h1>
+        </div>
+        <br>
+        <div class="center-3">
+            <div class="main-options">
                 <button class="main-button">Transcript</button>
-                <button class="main-button">Summary</button>
+                <a href="{% url 'summarize'%}"><button class="main-button">Summary</button></a>
                 <button class="main-button">
-                    <img src="https://img.icons8.com/material-rounded/24/null/high-volume.png"/>
-                </button> 
-                    </div>
-                    <div class="main-field">
-                        <form method="get" >
-                            <h2>Create Ideas for UI/UX Design</h2>
-                            <p>Use animations and transitions: Use animations and transitions to create a more engaging user experience. But be mindful of overusing them as they can distract from the content and slow down the interface.</p>
-                        </form>
-                    </div>
-    
-                </div>
-        </div>
-        <div class="main-3">
-            <div class="notes">
-                <h2>
-                    Notes
-                </h2>
-                <textarea name="notes-inbox" id="" cols="30" rows="15"></textarea>
+                    <img src="https://img.icons8.com/material-rounded/24/null/high-volume.png" />
+                </button>
             </div>
-            <div class="notifications">
-    
+            <div class="main-field">
+                <form method="get">
+                    <h2>Create Ideas for UI/UX Design</h2>
+                    <p>Use animations and transitions: Use animations and transitions to create a more engaging user
+                        experience. But be mindful of overusing them as they can distract from the content and slow down
+                        the interface.</p>
+                </form>
             </div>
+
         </div>
+    </div>
+    <div class="main-3">
+        <div class="notes">
+            <h2>
+                Notes
+            </h2>
+            <textarea name="notes-inbox" id="" cols="30" rows="15"></textarea>
+        </div>
+        <div class="notifications">
 
-{% endblock %}       
+        </div>
+    </div>
 
-
+    {% endblock %}
